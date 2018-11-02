@@ -1,6 +1,7 @@
 let heading = document.querySelector('h1');
 let description = document.querySelector('.desc');
 let list = document.querySelector('ul');
+let listItem = document.createElement('li');
 
 // 1: Set the text of the <h1> element
 heading.textContent = 'That text have been setted from JS !';
@@ -16,7 +17,7 @@ description.innerHTML = `That content is <strong> STRONG !</strong>`;
 list.classList.add('list');
 
 // 5: Create a new list item and add it to the <ul>
-
+list.append(listItem);
 
 // 6: Change all <input> elements from text fields to checkboxes
 
