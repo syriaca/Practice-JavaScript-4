@@ -1,4 +1,5 @@
 let heading = document.querySelector('h1');
+let description = document.querySelector('.desc');
 
 // 1: Set the text of the <h1> element
 heading.textContent = 'That text have been setted from JS !';
@@ -8,7 +9,7 @@ heading.style.color = 'rebeccaPurple';
 
 // 3: Set the content of the '.desc' paragraph
 // The content should include at least one HTML tag
-
+description.innerHTML = `That content is <strong> STRONG !</strong>`;
 
 // 4: Set the class of the <ul> to 'list'
 
