@@ -31,3 +31,6 @@ button.textContent = 'Delete';
 extra.append(button);
 
 // 8: Remove the '.extra' <div> element from the DOM when a user clicks the 'Delete' button
+button.addEventListener('click', (e) => {
+    extra.remove();
+})
