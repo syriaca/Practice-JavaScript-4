@@ -1,8 +1,10 @@
 let heading = document.querySelector('h1');
+let extra = document.querySelector('.extra');
 let description = document.querySelector('.desc');
 let list = document.querySelector('ul');
 let listItem = document.createElement('li');
 let inputCollection = document.querySelectorAll('input');
+let button = document.createElement('button');
 
 // 1: Set the text of the <h1> element
 heading.textContent = 'That text have been setted from JS !';
@@ -25,6 +27,7 @@ inputCollection.forEach(input => input.type = 'checkbox');
 
 // 7: Create a <button> element, and set its text to 'Delete'
 // Add the <button> inside the '.extra' <div>
-
+button.textContent = 'Delete';
+extra.append(button);
 
 // 8: Remove the '.extra' <div> element from the DOM when a user clicks the 'Delete' button
