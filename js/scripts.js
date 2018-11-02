@@ -1,5 +1,6 @@
 let heading = document.querySelector('h1');
 let description = document.querySelector('.desc');
+let list = document.querySelector('ul');
 
 // 1: Set the text of the <h1> element
 heading.textContent = 'That text have been setted from JS !';
@@ -12,7 +13,7 @@ heading.style.color = 'rebeccaPurple';
 description.innerHTML = `That content is <strong> STRONG !</strong>`;
 
 // 4: Set the class of the <ul> to 'list'
-
+list.classList.add('list');
 
 // 5: Create a new list item and add it to the <ul>
 
